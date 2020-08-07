@@ -1,7 +1,71 @@
 <html><head>
-<!-- STYLE ONLY FOR DEMO - REMOVE -->
 
-</head><body><form action="mail.php" method="POST">
+<style>
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+ body {
+background: White
+}
+ .navbar-custom {
+        background-color: Black
+    }
+    /* Modify brand and text color */
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+        color: White
+    }
+</style>
+
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Custom styles for this template -->
+  <link href="Cover.css" rel="stylesheet">
+
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+  <a class="navbar-brand" href="#">Galaxy Dog Vacay</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+    <a class="nav-link" href="testimonials.html">Testimonials</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Care Type
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="night.html">Night Care</a>
+          <a class="dropdown-item" href="day.html">Day Care</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="walk.html">Walk</a>
+        </div>
+      </li>
+      <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+       <img src="paw3.jpg" alt="Dog Paw" width="70" height="55">
+    </form>
+  </div>
+</nav>
+
+<body><form action="mail.php" method="POST">
 <p>Name</p> <input type="text" name="name">
 <p>Email</p> <input type="text" name="email">
 <p>Phone</p> <input type="text" name="phone">
