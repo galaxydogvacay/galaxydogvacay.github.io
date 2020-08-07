@@ -2,8 +2,6 @@
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
-$call = $_POST['call'];
-$website = $_POST['website'];
 $priority = $_POST['priority'];
 $type = $_POST['type'];
 $message = $_POST['message'];
@@ -11,6 +9,6 @@ $formcontent=" From: $name \n Phone: $phone \n Priority: $priority \n Type: $typ
 $recipient = "jhuang.joseph@gmail.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+mail($recipient, $subject, $formcontent, $mailheader);
 echo "Thank You!" . " -" . "<a href='contact1.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
 ?>
