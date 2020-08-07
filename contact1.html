@@ -6,17 +6,66 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link rel="icon" href="../../../../favicon.ico">
-    <style>
-    .center {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	  width: 50%;
+
+	<title>
+	Dogsitting Service
+	</title>
+
+	<style>
+	body{
+	    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
 	}
-     body {
-	  background: White
+	.contact-form{
+	    background: #fff;
+	    margin-top: 10%;
+	    margin-bottom: 5%;
+	    width: 70%;
 	}
-     .navbar-custom {
+	.contact-form .form-control{
+	    border-radius:1rem;
+	}
+	.contact-image{
+	    text-align: center;
+	}
+	.contact-image img{
+	    border-radius: 6rem;
+	    width: 11%;
+	    margin-top: -3%;
+	    transform: rotate(29deg);
+	}
+	.contact-form form{
+	    padding: 14%;
+	}
+	.contact-form form .row{
+	    margin-bottom: -7%;
+	}
+	.contact-form h3{
+	    margin-bottom: 8%;
+	    margin-top: -10%;
+	    text-align: center;
+	    color: #0062cc;
+	}
+	.contact-form .btnContact {
+	    width: 50%;
+	    border: none;
+	    border-radius: 1rem;
+	    padding: 1.5%;
+	    background: #dc3545;
+	    font-weight: 600;
+	    color: #fff;
+	    cursor: pointer;
+	}
+	.btnContactSubmit
+	{
+	    width: 50%;
+	    border-radius: 1rem;
+	    padding: 1.5%;
+	    color: #fff;
+	    background-color: #0062cc;
+	    border: none;
+	    cursor: pointer;
+	}
+	.navbar-custom {
             background-color: Black
         }
         /* Modify brand and text color */
@@ -25,10 +74,7 @@
         .navbar-custom .navbar-text {
             color: White
         }
-    </style>
-	<title>
-	Galaxy Dog Vacay
-	</title>
+</style>
 
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -44,7 +90,7 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="dogsitting.html">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="gallery.html">Gallery</a>
@@ -64,7 +110,7 @@
 	        </div>
 	      </li>
 	      <li class="nav-item">
-		  <a class="nav-link" href="contact1.html">Contact Us</a>
+		  <a class="nav-link" href="contact.html">Contact Us</a>
 	      </li>
 	    </ul>
 	    <form class="form-inline my-2 my-lg-0">
@@ -73,61 +119,44 @@
 	  </div>
 </nav>
 
-	      <main role="main">
+<div class="container contact-form">
+            <div class="contact-image">
+                <img src="paw2.JPG" alt="dog clipart"/>
+            </div>
+            <form action="mail.php" method="POST">
+<p>Name</p> <input type="text" name="name">
+<p>Email</p> <input type="text" name="email">
+<p>Phone</p> <input type="text" name="phone">
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
- 	<div class="container" style="height: 420px;">...</div>
-	<style type="text/css" media="screen">
+<p>Request Phone Call:</p>
+Yes:<input type="checkbox" value="Yes" name="call"><br />
+No:<input type="checkbox" value="No" name="call"><br />
 
-	.jumbotron{
- 	 background-image: url(Snoopy+Bunny+Coco1_Widescreen.jpg);
-	 background-size: cover;
-	 background-repeat: no-repeat;
-	}
+<p>Website</p> <input type="text" name="website">
 
-	.jumbotron h1{
-   	 color: #fff;
-	}
+<p>Priority</p>
+<select name="priority" size="1">
+<option value="Low">Low</option>
+<option value="Normal">Normal</option>
+<option value="High">High</option>
+<option value="Emergency">Emergency</option>
+</select>
+<br />
 
-	.jumbotron p{
-	 color: #fff;
-	}
+<p>Type</p>
+<select name="type" size="1">
+<option value="update">Website Update</option>
+<option value="change">Information Change</option>
+<option value="addition">Information Addition</option>
+<option value="new">New Products</option>
+</select>
+<br />
 
-	</style>
-        <div class="container">
-          <h1 class="display-3">Welcome!</h1>
-          <p>We are a small team of three. We take care of your dogs when you are on vacation. We do our best to make your dogs feel like they are also on vacation!</p>
-          <p><a class="btn btn-primary btn-lg" href="testimonials.html" role="button">Learn more »</a></p>
-        </div>
-      </div>
-
-      <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-4">
-            <h2>Dog Walking Service</h2>
-            <p>We provide dog walking services within a certain range. This is perfect if you are working all day and your dog needs to be let out of the house. </p>
-            <p><a class="btn btn-secondary" href="walk.html" role="button">View details »</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Doggy Daycare</h2>
-            <p>We can take care of your dogs in the daytime. They will not be restricted to a cage and will be allowed to roam freely around the house. </p>
-            <p><a class="btn btn-secondary" href="day.html" role="button">View details »</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Overnight Dog Care</h2>
-            <p>We also take care of your dogs at night. They will choose where in the house they want to sleep for the night.</p>
-            <p><a class="btn btn-secondary" href="night.html" role="button">View details »</a></p>
-          </div>
-        </div>
-
-        <hr>
-
-      </div> <!-- /container -->
-
-    </main>
-
+<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+<input type="submit" value="Send"><input type="reset" value="Clear">
+</form>
+</div>
+      </main>
       <!-- Bootstrap core JavaScript
 	      ================================================== -->
 	      <!-- Placed at the end of the document so the pages load faster -->
